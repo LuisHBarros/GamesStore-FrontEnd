@@ -81,5 +81,5 @@ export const useApi = () => ({
             return e.response.status
         }
                 
-    }
+    },
 })

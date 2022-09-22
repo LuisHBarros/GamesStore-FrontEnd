@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import { useApi } from "../hooks/useApi";
 import { Product } from "../types/Product";
@@ -11,9 +12,9 @@ export function AuthProvider({ children} : {children: JSX.Element} ){
     
     const[user, setUser] = useState<User|null>(null);
     
-    async function signin(email: string, password: string) {
-        const data = await api.signin(email, password);
-        if(data === false)
+    async function signin(email: string, passport: string) {
+        const data = await api.signin(email, passport);
+        if(data === undefined)
             return false;
         if(data.user && data.token) {
             setUser(data.user);
