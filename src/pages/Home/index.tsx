@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import { INTEGER } from "sequelize/types"
 import { useApi } from "../../hooks/useApi"
 import { Product } from "../../types/Product"
 
