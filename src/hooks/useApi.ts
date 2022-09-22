@@ -19,7 +19,7 @@ export const useApi = () => ({
             return response.data;
             
         } catch (e) {
-            return undefined
+            return false
         }
     },
     registerUser: async (name: string, password: string, email: string) =>{

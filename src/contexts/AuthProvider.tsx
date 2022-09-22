@@ -11,9 +11,9 @@ export function AuthProvider({ children} : {children: JSX.Element} ){
     
     const[user, setUser] = useState<User|null>(null);
     
-    async function signin(email: string, passport: string) {
-        const data = await api.signin(email, passport);
-        if(data === undefined)
+    async function signin(email: string, password: string) {
+        const data = await api.signin(email, password);
+        if(data === false)
             return false;
         if(data.user && data.token) {
             setUser(data.user);
@@ -56,6 +56,7 @@ export function AuthProvider({ children} : {children: JSX.Element} ){
     }, [api]);
 
     return(
+        //@ts-ignore
         <AuthContext.Provider value={{ user, signin, signout, register }}>
             {children}
         </AuthContext.Provider>
