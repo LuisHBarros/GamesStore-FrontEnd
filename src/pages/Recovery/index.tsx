@@ -2,9 +2,8 @@ import * as yup from 'yup'
 import { useForm } from "react-hook-form";
 import { User } from '../../types/User';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { application } from 'express';
 import { useApi } from '../../hooks/useApi';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Register(){
