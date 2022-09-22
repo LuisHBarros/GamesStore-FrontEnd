@@ -1,0 +1,27 @@
+.gridbox{
+    @apply grid;
+    grid-template-columns: 2.5fr 1fr;
+
+}
+.gridbox2{
+    @apply grid;
+    grid-template-columns: 5fr 1fr;
+
+}
+.gridbox3{
+    @apply grid;
+    grid-template-columns: 2.5fr 2fr 1fr;
+
+}
+.gridbox4{
+    @apply grid;
+    grid-template-columns:  1fr 2fr;
+
+}
+
+
+input[type="radio"]:checked + label{
+    background-color: black;
+    color: #ffffff;
+}
+

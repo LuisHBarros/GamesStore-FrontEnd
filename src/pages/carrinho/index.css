@@ -1,0 +1,20 @@
+.gridb{
+    @apply grid w-[45rem] p-4;
+    grid-template-columns: 1.5fr 3fr 0.25fr;
+
+}
+
+.gridb2{
+    @apply grid w-[45rem] m-3 p-3 border-[1.5px] border-slate-600 rounded-md;
+    grid-template-rows: 2fr 1fr;
+
+}
+.gridb3{
+    @apply pt-8 grid p-8;
+    grid-template-columns: 2fr 1fr
+
+}
+.gridb4{
+    @apply grid;
+    grid-template-columns: 2fr 1fr;
+}
