@@ -3,7 +3,7 @@ import { Product } from "../types/Product";
 import { User } from "../types/User";
 
 const api = axios.create({
-    baseURL: 'http://localhost:3001'
+    baseURL: 'https://games-store123.herokuapp.com'
 });
 
 const acessToken = 'TEST-2551703936672501-091317-884eeda72278d8236c5d4d92b14fec03-149141930'
