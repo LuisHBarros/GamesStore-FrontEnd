@@ -3,7 +3,7 @@ import { Product } from "../types/Product";
 import { User } from "../types/User";
 
 const api = axios.create({
-    baseURL: 'http://15.229.49.35:3001'
+    baseURL: 'http://18.230.74.99:3001'
 });
 
 const acessToken = 'TEST-2551703936672501-091317-884eeda72278d8236c5d4d92b14fec03-149141930'
