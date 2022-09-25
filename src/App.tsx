@@ -27,8 +27,8 @@ function App() {
     <nav className='text-center'>
       <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='/'>Home</Link>
       <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='/private'>Privada</Link>
-      <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='registerproduct'>Register Product</Link>
       {auth.user && <Link className="text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-500" to='/cart'>Carrinho</Link>}
+      {auth.user?.adm === true &&  <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='registerproduct'>Register Product</Link>}
       {auth.user && <a className="text-black inline-block my-0 mx-2.5 hover:text-red-600 font-semibold text-[1em] transition-all duration-500" href='' onClick={handleLogout}>Logout</a>}
     </nav>
       </header>
