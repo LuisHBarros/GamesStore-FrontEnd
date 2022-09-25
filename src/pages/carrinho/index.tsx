@@ -107,9 +107,9 @@ export default function Carrinho(){
                     <div className='w-2/3 h-[3.5rem]'>
                                 <span className='inline-block'>Quantidade
                     <p>
-                        <button onClick={() => {minusQuantity(product._id, product.amount)}}> - </button>
+                        <button className='border-[1px] rounded-lg w-4 hover:bg-gray-900 hover:text-white transition-all duration-300' onClick={() => {minusQuantity(product._id, product.amount)}}> - </button>
                     {product.amount}    
-                        <button onClick={() => {plusQuantity(product._id, product.amount)}}>+</button>
+                        <button className='border-[1px] rounded-lg w-4 hover:bg-gray-900 hover:text-white transition-all duration-300' onClick={() => {plusQuantity(product._id, product.amount)}}>+</button>
                     </p>
                                 </span>
 

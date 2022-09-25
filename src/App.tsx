@@ -23,7 +23,7 @@ function App() {
   return (
     <div className=" items-center font-serif bg-slate-100">
       <header  className='bg-slate-200'>
-      <h1 className=" text-center font-bold font-sans text-[5em]">Clothes Store</h1>
+      <h1 className=" text-center font-bold font-sans text-[5em]">Games Store</h1>
     <nav className='text-center'>
       <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='/'>Home</Link>
       <Link className="p-2 text-lg text-black inline-block my-0 mx-2.5 hover:text-green-500 font-semibold text-[1em] transition-all duration-300" to='/private'>Privada</Link>
