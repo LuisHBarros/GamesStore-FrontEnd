@@ -14,6 +14,7 @@ export function AuthProvider({ children} : {children: JSX.Element} ){
     
     async function signin(email: string, passport: string) {
         const data = await api.signin(email, passport);
+
         if(data === undefined)
             return false;
         if(data.user && data.token) {
@@ -48,6 +49,7 @@ export function AuthProvider({ children} : {children: JSX.Element} ){
             const storageData = localStorage.getItem('authToken');
             if (storageData) {
                 const data = await api.validateToken(storageData);
+                console.log(data)
                 if (data.user) {
                     setUser(data.user);
                 }
